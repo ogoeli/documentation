@@ -1,0 +1,212 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+   <style>
+   body{
+       background-color: whitesmoke;
+       color:black;
+       line-height: 1.2;
+   }
+   header{
+       background-color: black;
+       color:white;
+       font-size: 1.5em;
+       font-weight: 300;
+       text-align: center;
+   }
+   section{
+       text-align: center;
+   }
+   p{
+       text-align: center;
+       margin:50px;
+   }
+   code{
+       display:block;
+       text-align: left;
+       position: relative;
+       line-height: 1.4;
+       background-color: white;
+       color:red;
+       padding:15px;
+       margin:10px;
+   }
+   #navbar li{
+      background-color: white;
+      color: black;
+      position: relative; 
+      font-size: 15px;
+      font-weight: 300px;
+      width:100px;
+   }
+   #navbar ul{
+       overflow-y: auto;
+       overflow-x: hidden;
+   }
+   #main-doc{
+       position: absolute;
+       margin-left: 150px;
+       padding:20px;
+       margin-bottom: 110px;
+   }
+   section li{
+       margin: 15px 0px 0px 20px;
+   }
+   @media only screen and(max-width:815px){
+       #navbar ul{
+           border:1px solid;
+           height:207px;
+       }
+       #navbar{
+           background-color: white;
+           position: absolute;
+           width:100%;
+           z-index:1;
+           border-bottom: 2px solid;
+       }
+   }
+   @media only screen and(max-width:400px){
+       #main-doc{
+           margin-left:-10px;
+       }
+   }
+   </style>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 col-sm-12 col-xs-12">
+                <nav id="navbar">
+                    <header>JS documentation</header>
+                    <ul class="nav nav-pills nav-stacked">
+                        <a class="nav-link" href="" rel="internal">
+                            <li>Introduction</li>
+                            <a class="nav-link" href="" rel="internal">
+                                <li>what you should already know</li>
+                                <a class="nav-link" href="" rel="internal">
+                                    <li>Javascript and Java</li>
+                                    <a class="nav-link" href="" rel="internal">
+                                        <li>Hello World</li>
+                                        <a class="nav-link" href="" rel="internal">
+                                           <li> Variables</li>
+                                           <a class="nav-link" href=""rel="internal">
+                                               <li>declaraing variables</li>
+                                               <a class="nav-link" href="" rel="internal">
+                                                   <li>variable Scope</li>
+                                                   <a class="nav-link" href="" rel="internal">
+                                                       <li>Global variables</li>
+                                                       <a class="nav-link" href="" rel="internal">
+                                                           <li>References</li>
+                                                       </a>
+                                                   </a>
+                                               </a>
+                                           </a>
+                                        </a>
+                                    </a>
+                                </a>
+                            </a>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+<div class="col-md-10 col-sm-12 col-xs-12">
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>Javascript is a cross-platform,object-orinented scripting language.its a
+                small and lightweight language.Inside a host environment(for example, a web browser)
+                javascript can be connected to the objects of its environment to provide programmatic control over them</p>
+                <P> javascipt contains a standard libary of objects,such as array,date and math,a core set of language elements such as operators,control,structures and statement.core javascript can be extended for a variety of purposes by supplementing it with additional objects;for example:</P>
+                <li>client-side javascript extends the core language by supplying objects to control a browser and its document object model(DOM).For example,client-side extensions allow an application to place elements on an HTML form and respond to user event such as mouse clicks,form input and page navigation.</li>
+                <li>server-side Javascript extwends the core language by supplying objects relevant to running Javascript on a server.for example,server-side extensions allow an application to communicate with a database,provide continuity of information from one invocation to another of the application,or perform file manipulation on a server.</li>
+        </section>
+        <section class="main-section" id="what_you_should_already_know">
+            <header>what what you should already know</header>
+            <p>this guide assums you have the following basic background:</p>
+            <li>a great understanding of the internet and the world wide web(WWW)</li>
+            <li>good working knowledge of hyperText markup language(HTML)</li>
+            <li>some programming experince,if you are new to programming,try one of the tutorials linked on the main page about javascript</li>
+        </section>
+        <section class="main-section" id="javascipt and java">
+            <header>javascript and Java</header>
+            <p>Javascript and java are similar in some wayas but fundamentally different in some others. the javascript language resembles java but does not have java's static typing and strong type checking.javascript follows most of java expresssion syntax,naming convetions and basic control-flow constructs which was the reason why it was renamed from livescript to Javascript
+              <p>in contrast to java's compile-time system of classes built by declarations,javascript supports a runtime system based on a small number of data types representing numeric,boolean and string values.Javascript has a prototype-based object model instead of the more common class-based model provides dynamic inheritance,that is what is inherited can vary for individual objects.javascript also supports function without any special declarative requirements.Functions can be properties of objects,excuting as loosely typed methods.</p>
+                Javascript is a very free-form language compared to java.you do not have to declare all variables,classes and methods.you do not have to be concerned with whether methods are public,pirvate or protected and you dont have to implement interfaces.variables,parameters and functions return types are not explicity typed.
+            </p>
+        </section>
+        <section class="main-section" id="hello_world">
+            <header>Hello World</header>
+            <p>to get started with writing javascript,open the scratchpad and write your first"hello world"javascript code:
+                <code>function greetMe(yourName){
+                    alert("hello"+yourName);
+                }
+                greetMe("world");
+                </code>
+              <p> select the code in the pad and hit ctrl+R to watch it unfold in your browser!</p>
+            </p>
+        </section>
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <p>you use variables as symbolic names for values in your application.the names of variables,called identifers conform to certain rules
+                a javascript identifer must start with a letter,underscore(_),or dollar sign($);subsquent characters can also be digits(0-9).because Javascript is case sensitive,letters include the characters"A"through "Z"(uppercase)and the characters"a" through"z"(lowercase).
+                you can use ISO 8859-1 or unicode letters such as a and u in identifers.you can also use the unicode escape sequences as characters in identifers.some examp.les of legal names are number_hits,temp99 and _name.
+            </p>
+        </section>
+        <section class="main-section" id="declaring variables">
+            <header>Declaring variables</header>
+            <p>you can declare a variable in three ways:
+                with the keyworld var.for example,
+                <code>
+                    var x =42
+                </code>
+                this syntax can be used to declare both local and global variables.by simply assigning it a value.for example,
+                <code>
+                    x = 42
+                </code>
+                this always declares a global variables.it generate a strict javascript warning.you shouldn't use this variant.with the keyworld let.for example
+                <code>
+                    let y =13
+                </code>
+                this syntax can be used to declare a block scope local variable.see varable scope below.
+        </section>
+        <section class="main-section" id="variable scope">
+            <header>Variable Scope</header>
+            <p>when you declare a variable outside of any function,it is called a global variable because it is availabe to any other code in the current document.when you declare a variable within a function its a called a local variable because it is availabe only within that function</p>
+            <p>javascript before ECMAscript 2015 does not have block statement scope;rather, a variable declared within a block is local to the function(or global scope)that the block resides within.for example the following code will log 5,because the scope of x is the function(or global context)within which x is declared,not the block,which in this case is an if statement</p>
+            <code>
+                if (true){
+                    varx = 5
+                }
+                console.log(x);//5
+            </code>
+            the behaviour changes,when using the let declaration introduced in ECMAscript2015.
+            <code>
+                if(true){
+                    let y = 5;
+                }
+                console.log(y);
+                //ReferenceError:y is not defined
+            </code>
+        </section>
+        <section class="main-section" id="global variables">
+            <header>Global variables</header>
+            <p>gloabl variables are in fact properties ofthe global object.in the web pages the global object is window,so you can access global variables using the window variable syntax
+                consequentlu, you can access gloabl variables declared in one window or frame from another window or frame by specifying the window or frame name.for example,if a variable called phoneNumber is declared in a document,you van refer to this variable from an iframe as parent.phoneNumber.
+            </p>
+        </section>
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <li>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/web/Javascript/Guide">MDN</a></li>
+        </section>
+    </main>
+</div>
+</body>
+</html>
